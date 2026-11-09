@@ -1,0 +1,330 @@
+<h1 class="sin-margen-sup">Capítulo 8: operación</h1>
+      <p class="entradilla">Aquí está la disciplina. El prólogo de la edición de 2019 lo dice expresamente: los requisitos específicos de continuidad del negocio están ahora casi por completo en el capítulo 8, que se reestructuró para que se entiendan mejor. La introducción lo resume en una frase: define las necesidades de continuidad, determina cómo atenderlas y desarrolla los procedimientos para gestionar la organización durante una interrupción.</p>
+
+      <div class="indice-pagina">
+        <strong>Apartados del capítulo 8</strong>
+        <ol>
+          <li><a href="#control">8.1 Planificación y control operacional</a></li>
+          <li><a href="#analisis">8.2 Análisis de impacto en el negocio y evaluación de riesgos</a></li>
+          <li><a href="#estrategias">8.3 Estrategias y soluciones de continuidad del negocio</a></li>
+          <li><a href="#planes">8.4 Planes y procedimientos de continuidad del negocio</a></li>
+          <li><a href="#ejercicios">8.5 Programa de ejercicios</a></li>
+          <li><a href="#evaluacion">8.6 Evaluación de la documentación y las capacidades</a></li>
+        </ol>
+      </div>
+
+      <div class="caja caja-clave">
+        <span class="titulo-caja">El capítulo se lee como una cadena</span>
+        <p>Cada apartado toma como entrada la salida del anterior: el <strong>análisis</strong> (8.2) dice qué hay que proteger y en qué plazo; las <strong>estrategias y soluciones</strong> (8.3) deciden cómo; los <strong>planes</strong> (8.4) documentan quién hace qué cuando ocurre; los <strong>ejercicios</strong> (8.5) comprueban que funciona; y la <strong>evaluación</strong> (8.6) revisa todo lo anterior. Si un eslabón falta, los siguientes se apoyan en suposiciones.</p>
+      </div>
+
+      <h2 id="control">8.1 Planificación y control operacional</h2>
+      <p>La organización debe planificar, implementar y controlar los procesos necesarios para cumplir los requisitos y para implementar las acciones determinadas en el apartado 6.1, mediante:</p>
+      <ul>
+        <li>el establecimiento de <strong>criterios</strong> para los procesos;</li>
+        <li>la implementación del <strong>control</strong> de los procesos de acuerdo con esos criterios;</li>
+        <li>el mantenimiento de <strong>información documentada</strong> en la medida necesaria para tener confianza en que los procesos se han llevado a cabo según lo planificado.</li>
+      </ul>
+      <p>Además, debe <strong>controlar los cambios planificados</strong> y revisar las consecuencias de los cambios no previstos, tomando acciones para mitigar cualquier efecto adverso cuando sea necesario. Y debe asegurarse de que <strong>los procesos contratados externamente y la cadena de suministro están controlados</strong>.</p>
+
+      <div class="caja caja-info">
+        <span class="titulo-caja">La cadena de suministro aparece tres veces</span>
+        <p>Aquí como obligación de control; en el BIA, como dependencias de socios y proveedores que hay que determinar (8.2.2 h); y en la evaluación, como capacidades de continuidad de terceros que hay que evaluar (8.6 c). También figuran como tipo de recurso (8.3.4 h). La continuidad de la organización es, como mucho, tan buena como la de su proveedor más crítico.</p>
+      </div>
+
+      <h2 id="analisis">8.2 Análisis de impacto en el negocio y evaluación de riesgos</h2>
+      <h3>8.2.1 Generalidades</h3>
+      <p>La organización debe:</p>
+      <ul>
+        <li>implementar y mantener <strong>procesos sistemáticos</strong> para analizar el impacto en el negocio y evaluar los riesgos de interrupción;</li>
+        <li><strong>revisar</strong> el análisis de impacto en el negocio y la evaluación de riesgos a intervalos planificados y cuando haya cambios significativos en la organización o en el contexto en que opera.</li>
+      </ul>
+      <p>La nota resuelve una vieja discusión: <strong>la organización determina el orden</strong> en que realiza el análisis de impacto y la evaluación de riesgos.</p>
+
+      <h3 id="bia">8.2.2 Análisis de impacto en el negocio (BIA)</h3>
+      <p>La organización debe usar el proceso de análisis de impacto para determinar las <strong>prioridades y los requisitos de continuidad del negocio</strong>. El proceso debe cumplir ocho pasos:</p>
+
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <thead>
+            <tr><th style="width:8%"></th><th>El proceso debe…</th><th>Lectura práctica</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>a)</strong></td><td>definir los <strong>tipos de impacto y los criterios</strong> pertinentes para el contexto de la organización</td><td>Antes de preguntar a nadie: una escala común (financiero, legal, reputacional, operativo, sobre las personas…) con umbrales.</td></tr>
+            <tr><td><strong>b)</strong></td><td>identificar las <strong>actividades</strong> que sustentan la provisión de productos y servicios</td><td>Se parte de los productos y servicios del alcance (4.3.2), no del organigrama.</td></tr>
+            <tr><td><strong>c)</strong></td><td>usar los tipos y criterios para evaluar los <strong>impactos a lo largo del tiempo</strong> derivados de la interrupción de esas actividades</td><td>El impacto a las 4 horas, al día, a los 3 días, a la semana: el tiempo es la variable.</td></tr>
+            <tr><td><strong>d)</strong></td><td>identificar el <strong>plazo a partir del cual</strong> los impactos de no reanudar las actividades serían <strong>inaceptables</strong> para la organización</td><td>Nota 1: puede denominarse «periodo máximo tolerable de interrupción» (MTPD).</td></tr>
+            <tr><td><strong>e)</strong></td><td>fijar, <strong>dentro del plazo anterior</strong>, plazos priorizados para reanudar las actividades interrumpidas a una <strong>capacidad mínima aceptable</strong> especificada</td><td>Nota 2: puede denominarse «objetivo de tiempo de recuperación» (RTO).</td></tr>
+            <tr><td><strong>f)</strong></td><td>usar este análisis para identificar las <strong>actividades priorizadas</strong></td><td>La lista que dirige todo lo demás.</td></tr>
+            <tr><td><strong>g)</strong></td><td>determinar qué <strong>recursos</strong> se necesitan para sustentar las actividades priorizadas</td><td>Personas, datos, instalaciones, equipos, sistemas, proveedores.</td></tr>
+            <tr><td><strong>h)</strong></td><td>determinar las <strong>dependencias</strong>, incluidos socios y proveedores, y las <strong>interdependencias</strong> de las actividades priorizadas</td><td>Una actividad no puede reanudarse antes que aquellas de las que depende.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="texto-menor">La columna «lectura práctica» es elaboración propia, salvo las referencias a las notas 1 y 2.</p>
+
+      <figure class="figura-flujo">
+        <svg class="svg-flujo" viewBox="0 0 760 290" role="img" aria-labelledby="fig-plazos-titulo fig-plazos-desc">
+          <title id="fig-plazos-titulo">Los dos plazos del análisis de impacto en el negocio</title>
+          <desc id="fig-plazos-desc">Línea de tiempo. La capacidad cae al producirse la interrupción. Dentro del plazo priorizado de reanudación (RTO) la actividad vuelve a la capacidad mínima aceptable. El plazo a partir del cual el impacto es inaceptable (MTPD) es más largo y contiene al anterior.</desc>
+
+          <text class="fase" x="20" y="24">CAPACIDAD</text>
+          <text class="banda" x="20" y="62">normal</text>
+          <text class="banda" x="20" y="118">mínima aceptable</text>
+
+          <line class="separador" x1="140" y1="114" x2="720" y2="114" />
+          <line class="separador" x1="140" y1="30" x2="140" y2="275" />
+          <line class="separador" x1="380" y1="100" x2="380" y2="232" />
+          <line class="separador" x1="600" y1="60" x2="600" y2="275" />
+
+          <g class="flecha">
+            <path d="M130 58 L140 58 L140 165 L330 165 C355 165 365 114 380 114 L470 114 C540 114 560 58 640 58 L720 58" />
+          </g>
+
+          <g class="flecha">
+            <path d="M60 190 L724 190" />
+          </g>
+          <polygon class="punta" points="724,185 734,190 724,195" />
+          <text class="banda" x="690" y="182">tiempo</text>
+          <text class="fase" x="146" y="24">INTERRUPCIÓN</text>
+
+          <g class="caja">
+            <rect x="140" y="204" width="240" height="28" rx="3" />
+            <text x="260" y="223" text-anchor="middle">RTO · 8.2.2 e)</text>
+          </g>
+          <g class="caja caja-opcional">
+            <rect x="140" y="246" width="460" height="28" rx="3" />
+            <text x="370" y="265" text-anchor="middle">MTPD · 8.2.2 d): después, el impacto es inaceptable</text>
+          </g>
+        </svg>
+        <figcaption>El plazo priorizado de reanudación se fija siempre <strong>dentro</strong> del plazo a partir del cual el impacto sería inaceptable, y se refiere a una capacidad mínima aceptable, no a la capacidad normal. <span class="texto-menor">Figura de elaboración propia; la norma no incluye figuras. MTPD y RTO son denominaciones que la norma menciona en notas.</span></figcaption>
+      </figure>
+
+      <div class="caja caja-aviso">
+        <span class="titulo-caja">Tres precisiones que el texto contiene y que suelen perderse</span>
+        <p><strong>El orden.</strong> Primero se identifica el plazo inaceptable (d) y después, dentro de él, el plazo de reanudación (e). Un RTO igual o mayor que el MTPD contradice el propio requisito.</p>
+        <p><strong>La capacidad.</strong> El plazo de reanudación va ligado a una «capacidad mínima aceptable especificada». Un RTO sin nivel de servicio asociado está incompleto: ¿reanudar al 30 % o al 100 %?</p>
+        <p><strong>El sujeto.</strong> Los plazos son de las <em>actividades</em>. Los de los sistemas, los proveedores o las instalaciones se derivan de ellos en el paso g), al determinar los recursos.</p>
+      </div>
+
+      <h3 id="riesgos">8.2.3 Evaluación de riesgos</h3>
+      <p>La organización debe implementar y mantener un proceso de evaluación de riesgos. La nota remite a <strong>ISO 31000</strong> para ese proceso. La organización debe:</p>
+      <ul>
+        <li><strong>identificar</strong> los riesgos de interrupción de las <strong>actividades priorizadas</strong> de la organización y de los <strong>recursos que requieren</strong>;</li>
+        <li><strong>analizar y evaluar</strong> los riesgos identificados;</li>
+        <li>determinar <strong>qué riesgos requieren tratamiento</strong>.</li>
+      </ul>
+      <p>Una segunda nota cierra el cruce con el capítulo 6: los riesgos de este apartado se refieren a la interrupción de las actividades del negocio; los riesgos y oportunidades relativos a la eficacia del sistema de gestión se tratan en el <a href="capitulo-6.html#riesgos">apartado 6.1</a>.</p>
+
+      <div class="caja caja-info">
+        <span class="titulo-caja">Por qué suele hacerse el BIA primero</span>
+        <p>La norma deja el orden a criterio de la organización, pero el propio texto da una pista: la evaluación de riesgos se dirige a las <em>actividades priorizadas</em> y a sus recursos, y esas actividades son un resultado del BIA. Hacer el BIA antes acota la evaluación de riesgos a lo que importa. Hacerla antes es legítimo —por ejemplo, cuando ya existe un análisis de riesgos corporativo—, pero habrá que volver sobre ella cuando se conozcan las prioridades.</p>
+      </div>
+
+      <h2 id="estrategias">8.3 Estrategias y soluciones de continuidad del negocio</h2>
+      <h3>8.3.1 Generalidades</h3>
+      <p>A partir de los resultados del análisis de impacto y de la evaluación de riesgos, la organización debe identificar y seleccionar estrategias de continuidad del negocio que consideren opciones para <strong>antes, durante y después</strong> de la interrupción. Las estrategias deben estar compuestas por <strong>una o más soluciones</strong>.</p>
+
+      <h3>8.3.2 Identificación de estrategias y soluciones</h3>
+      <p>La identificación debe basarse en la medida en que las estrategias y soluciones:</p>
+      <ul>
+        <li>cumplen los requisitos para <strong>continuar y recuperar las actividades priorizadas</strong> dentro de los plazos identificados y a la capacidad acordada;</li>
+        <li><strong>protegen</strong> las actividades priorizadas de la organización;</li>
+        <li><strong>reducen la probabilidad</strong> de interrupción;</li>
+        <li><strong>acortan el periodo</strong> de interrupción;</li>
+        <li><strong>limitan el impacto</strong> de la interrupción sobre los productos y servicios de la organización;</li>
+        <li>prevén la <strong>disponibilidad de recursos adecuados</strong>.</li>
+      </ul>
+
+      <h3>8.3.3 Selección de estrategias y soluciones</h3>
+      <p>La selección debe basarse en la medida en que las estrategias y soluciones:</p>
+      <ul>
+        <li>cumplen los requisitos para continuar y recuperar las actividades priorizadas dentro de los plazos identificados y a la capacidad acordada;</li>
+        <li>consideran <strong>la cantidad y el tipo de riesgo</strong> que la organización puede o no asumir;</li>
+        <li>consideran los <strong>costes y beneficios</strong> asociados.</li>
+      </ul>
+
+      <div class="caja caja-clave">
+        <span class="titulo-caja">Identificar es abrir opciones; seleccionar es decidir</span>
+        <p>Los dos apartados comparten el primer criterio —cumplir plazos y capacidad— y luego divergen. Al <strong>identificar</strong> se buscan todas las formas de proteger, prevenir, acortar y limitar. Al <strong>seleccionar</strong> entran el apetito de riesgo y el dinero. Esa separación obliga a que la decisión sea explícita: si se descarta una solución porque cuesta demasiado, queda claro qué riesgo se está aceptando a cambio, y quién lo acepta.</p>
+      </div>
+
+      <h3 id="recursos">8.3.4 Requisitos de recursos</h3>
+      <p>La organización debe determinar los requisitos de recursos para implementar las soluciones seleccionadas. Los tipos de recursos considerados deben incluir, <strong>sin limitarse a ellos</strong>:</p>
+
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <thead>
+            <tr><th style="width:8%"></th><th style="width:38%">Tipo de recurso</th><th>Pregunta que debe quedar respondida</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>a)</strong></td><td>Personas</td><td>¿Quién sabe hacerlo y quién le sustituye?</td></tr>
+            <tr><td><strong>b)</strong></td><td>Información y datos</td><td>¿Qué información hace falta y cuánta se puede perder?</td></tr>
+            <tr><td><strong>c)</strong></td><td>Infraestructura física: edificios, lugares de trabajo u otras instalaciones, y los servicios asociados</td><td>¿Desde dónde se trabaja si la sede no está disponible?</td></tr>
+            <tr><td><strong>d)</strong></td><td>Equipos y consumibles</td><td>¿Qué maquinaria, repuestos o materiales son imprescindibles?</td></tr>
+            <tr><td><strong>e)</strong></td><td>Sistemas de tecnologías de la información y las comunicaciones (TIC)</td><td>¿Qué aplicaciones y comunicaciones, y en qué orden?</td></tr>
+            <tr><td><strong>f)</strong></td><td>Transporte y logística</td><td>¿Cómo llegan las personas y cómo salen los productos?</td></tr>
+            <tr><td><strong>g)</strong></td><td>Finanzas</td><td>¿Hay liquidez y autorización para gastar en emergencia?</td></tr>
+            <tr><td><strong>h)</strong></td><td>Socios y proveedores</td><td>¿De quién dependemos y qué alternativa hay?</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="texto-menor">La tercera columna es elaboración propia.</p>
+
+      <h3>8.3.5 Implementación de soluciones</h3>
+      <p>La organización debe <strong>implementar y mantener</strong> las soluciones de continuidad seleccionadas <strong>para que puedan activarse cuando se necesiten</strong>.</p>
+
+      <div class="caja caja-error">
+        <span class="titulo-caja">Error frecuente: soluciones que solo existen en el papel</span>
+        <p>Un contrato de sitio alterno que nunca se ha visitado, un proveedor secundario que no ha recibido un solo pedido o un acuerdo de trabajo remoto para el que no hay licencias suficientes son soluciones <em>seleccionadas</em>, no <em>implementadas</em>. El verbo «mantener» añade además la dimensión del tiempo: una solución implementada hace tres años puede haber dejado de ser activable.</p>
+      </div>
+
+      <h2 id="planes">8.4 Planes y procedimientos de continuidad del negocio</h2>
+      <h3>8.4.1 Generalidades</h3>
+      <p>La organización debe implementar y mantener una <strong>estructura de respuesta</strong> que permita la advertencia y la comunicación oportunas a las partes interesadas pertinentes. Debe proporcionar <strong>planes y procedimientos</strong> para gestionar la organización durante una interrupción, que se usarán cuando sea necesario para activar las soluciones de continuidad. La nota aclara que hay distintos tipos de procedimientos que componen los planes de continuidad.</p>
+      <p>La organización debe identificar y documentar los planes y procedimientos <strong>a partir del resultado de las estrategias y soluciones seleccionadas</strong>. Los procedimientos deben:</p>
+      <ul>
+        <li>ser <strong>específicos</strong> en cuanto a los pasos inmediatos que se han de dar durante una interrupción;</li>
+        <li>ser <strong>flexibles</strong> para responder a las condiciones internas y externas cambiantes de una interrupción;</li>
+        <li>centrarse en el <strong>impacto</strong> de los incidentes que potencialmente llevan a una interrupción;</li>
+        <li>ser <strong>eficaces</strong> para minimizar el impacto mediante la implementación de soluciones apropiadas;</li>
+        <li><strong>asignar roles y responsabilidades</strong> para las tareas que contienen.</li>
+      </ul>
+
+      <div class="caja caja-info">
+        <span class="titulo-caja">Planes por impacto, no por causa</span>
+        <p>El punto c) pide centrarse en el impacto. Es la razón por la que un buen plan no se titula «plan ante incendio» o «plan ante inundación», sino que responde a la pérdida de un recurso: sin sede, sin sistemas, sin personas, sin un proveedor. Las causas son innumerables; los impactos, pocos. Y la combinación de «específico» (a) y «flexible» (b) apunta en la misma dirección: pasos inmediatos concretos, sin pretender guionizar una crisis entera.</p>
+      </div>
+
+      <h3 id="estructura">8.4.2 Estructura de respuesta</h3>
+      <p>La organización debe implementar y mantener una estructura que identifique <strong>uno o más equipos</strong> responsables de responder a las interrupciones (8.4.2.1). Los roles y responsabilidades de cada equipo y <strong>las relaciones entre los equipos</strong> deben estar claramente establecidos (8.4.2.2).</p>
+      <p>De forma colectiva, los equipos deben ser competentes para (8.4.2.3):</p>
+      <ol>
+        <li><strong>evaluar</strong> la naturaleza y la extensión de una interrupción y su impacto potencial;</li>
+        <li>evaluar el impacto frente a <strong>umbrales predefinidos</strong> que justifican el inicio de una respuesta formal;</li>
+        <li><strong>activar</strong> una respuesta de continuidad del negocio apropiada;</li>
+        <li><strong>planificar</strong> las acciones que es necesario emprender;</li>
+        <li><strong>establecer prioridades</strong>, con la seguridad de la vida como primera prioridad;</li>
+        <li><strong>hacer seguimiento</strong> de los efectos de la interrupción y de la respuesta de la organización;</li>
+        <li><strong>activar las soluciones</strong> de continuidad del negocio;</li>
+        <li><strong>comunicarse</strong> con las partes interesadas pertinentes, las autoridades y los medios de comunicación.</li>
+      </ol>
+      <p>Para cada equipo debe haber (8.4.2.4):</p>
+      <ul>
+        <li><strong>personal identificado y sus suplentes</strong>, con la responsabilidad, la autoridad y la competencia necesarias para desempeñar el rol designado;</li>
+        <li><strong>procedimientos documentados</strong> que guíen sus acciones, incluidos los de activación, operación, coordinación y comunicación de la respuesta.</li>
+      </ul>
+
+      <div class="caja caja-clave">
+        <span class="titulo-caja">La única prioridad que la norma impone</span>
+        <p>ISO 22301 deja a la organización decidir casi todo: qué actividades prioriza, qué plazos fija, qué riesgo acepta. Hay una excepción, en el punto e): al establecer prioridades durante la respuesta, <strong>la seguridad de la vida va primero</strong>. Ningún plazo de recuperación está por encima.</p>
+      </div>
+
+      <h3 id="advertencia">8.4.3 Advertencia y comunicación</h3>
+      <p>La organización debe documentar y mantener procedimientos para (8.4.3.1):</p>
+      <ul>
+        <li><strong>comunicarse interna y externamente</strong> con las partes interesadas pertinentes, incluyendo qué, cuándo, con quién y cómo comunicar. La nota añade que pueden documentarse procedimientos sobre cómo y en qué circunstancias la organización se comunica con los empleados y con sus contactos de emergencia;</li>
+        <li><strong>recibir, documentar y responder</strong> a las comunicaciones de las partes interesadas, incluido cualquier sistema nacional o regional de avisos de riesgo o equivalente;</li>
+        <li>asegurar la <strong>disponibilidad de los medios de comunicación</strong> durante una interrupción;</li>
+        <li>facilitar la <strong>comunicación estructurada con los servicios de emergencia</strong>;</li>
+        <li>proporcionar los detalles de la <strong>respuesta de la organización a los medios</strong> tras un incidente, incluida una estrategia de comunicaciones;</li>
+        <li><strong>registrar</strong> los detalles de la interrupción, las acciones tomadas y las decisiones adoptadas.</li>
+      </ul>
+      <p>Cuando sea aplicable, también debe considerarse e implementarse (8.4.3.2): <strong>alertar</strong> a las partes interesadas potencialmente afectadas por una interrupción real o inminente, y asegurar la <strong>coordinación y comunicación apropiadas entre las múltiples organizaciones</strong> que responden.</p>
+      <p>Los procedimientos de advertencia y comunicación <strong>deben ejercitarse</strong> como parte del programa de ejercicios del apartado 8.5.</p>
+
+      <div class="caja caja-aviso">
+        <span class="titulo-caja">El registro de decisiones</span>
+        <p>El punto f) es un requisito de registro <em>durante</em> la crisis: qué pasó, qué se hizo y qué se decidió. Es lo primero que se abandona bajo presión y lo primero que se echa en falta después: es la base de los informes posteriores al incidente (8.6 b), de las lecciones aprendidas que se llevan a la revisión por la dirección (9.3.2 j) y, llegado el caso, de la defensa de la organización ante un regulador. Conviene asignar a alguien esa única tarea.</p>
+      </div>
+
+      <h3 id="contenido-planes">8.4.4 Planes de continuidad del negocio</h3>
+      <p>La organización debe documentar y mantener planes y procedimientos de continuidad del negocio. Los planes deben proporcionar orientación e información para ayudar a los equipos a responder a una interrupción y para ayudar a la organización en la respuesta y la recuperación (8.4.4.1).</p>
+      <p><strong>En conjunto</strong>, los planes deben contener (8.4.4.2):</p>
+      <ul>
+        <li>el detalle de las <strong>acciones que tomarán los equipos</strong> para continuar o recuperar las actividades priorizadas dentro de los plazos predeterminados, y para hacer seguimiento del impacto de la interrupción y de la respuesta de la organización;</li>
+        <li>la referencia a los <strong>umbrales predefinidos</strong> y al proceso para activar la respuesta;</li>
+        <li>los procedimientos que permitan la <strong>entrega de productos y servicios a la capacidad acordada</strong>;</li>
+        <li>el detalle para gestionar las <strong>consecuencias inmediatas</strong> de una interrupción, prestando la debida atención al bienestar de las personas, a la prevención de más pérdidas o indisponibilidad de actividades priorizadas, y al impacto en el medio ambiente.</li>
+      </ul>
+      <p><strong>Cada plan</strong> debe incluir (8.4.4.3):</p>
+
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <caption>Contenido mínimo de cada plan de continuidad (8.4.4.3)</caption>
+          <thead>
+            <tr><th style="width:8%"></th><th>Contenido</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>a)</strong></td><td>El propósito, el alcance y los objetivos</td></tr>
+            <tr><td><strong>b)</strong></td><td>Los roles y responsabilidades del equipo que implementará el plan</td></tr>
+            <tr><td><strong>c)</strong></td><td>Las acciones para implementar las soluciones</td></tr>
+            <tr><td><strong>d)</strong></td><td>La información de apoyo necesaria para activar (incluidos los criterios de activación), operar, coordinar y comunicar las acciones del equipo</td></tr>
+            <tr><td><strong>e)</strong></td><td>Las interdependencias internas y externas</td></tr>
+            <tr><td><strong>f)</strong></td><td>Los requisitos de recursos</td></tr>
+            <tr><td><strong>g)</strong></td><td>Los requisitos de información (reporte)</td></tr>
+            <tr><td><strong>h)</strong></td><td>Un proceso de desactivación</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Cada plan debe ser <strong>utilizable y estar disponible en el momento y el lugar en que se requiera</strong>.</p>
+
+      <div class="caja caja-error">
+        <span class="titulo-caja">Los dos contenidos que más faltan</span>
+        <p><strong>Los criterios de activación</strong> (d). Sin ellos, activar el plan es una decisión personal que se retrasa por miedo a exagerar; la norma pide umbrales predefinidos precisamente para quitar esa carga. <strong>El proceso de desactivación</strong> (h). Los planes suelen describir cómo empezar y casi nunca cómo terminar: quién declara el fin de la respuesta, con qué criterio y qué se hace con los equipos y los recursos movilizados.</p>
+      </div>
+
+      <h3 id="recuperacion">8.4.5 Recuperación</h3>
+      <p>La organización debe tener <strong>procesos documentados para restaurar y devolver las actividades del negocio</strong> desde las medidas temporales adoptadas durante y después de una interrupción.</p>
+
+      <div class="caja caja-info">
+        <span class="titulo-caja">El camino de vuelta</span>
+        <p>Es el requisito más breve del capítulo y uno de los menos trabajados. Operar desde un sitio alterno o con procedimientos manuales genera una deuda: datos capturados en papel que hay que cargar, transacciones que conciliar, equipos que devolver, personal que regresa. Volver a la normalidad mal planificado puede provocar una segunda interrupción.</p>
+      </div>
+
+      <h2 id="ejercicios">8.5 Programa de ejercicios</h2>
+      <p>La organización debe implementar y mantener un <strong>programa de ejercicios y pruebas</strong> para validar, a lo largo del tiempo, la eficacia de sus estrategias y soluciones de continuidad del negocio. Debe realizar ejercicios y pruebas que:</p>
+
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <thead>
+            <tr><th style="width:8%"></th><th>Los ejercicios y pruebas deben…</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>a)</strong></td><td>ser coherentes con los <strong>objetivos de continuidad</strong> del negocio</td></tr>
+            <tr><td><strong>b)</strong></td><td>basarse en <strong>escenarios apropiados</strong>, bien planificados, con propósitos y objetivos claramente definidos</td></tr>
+            <tr><td><strong>c)</strong></td><td>desarrollar <strong>trabajo en equipo, competencia, confianza y conocimiento</strong> en quienes tienen roles que desempeñar en relación con las interrupciones</td></tr>
+            <tr><td><strong>d)</strong></td><td><strong>en conjunto y a lo largo del tiempo</strong>, validar las estrategias y soluciones de continuidad</td></tr>
+            <tr><td><strong>e)</strong></td><td>producir <strong>informes formales posteriores al ejercicio</strong> que contengan resultados, recomendaciones y acciones para implementar mejoras</td></tr>
+            <tr><td><strong>f)</strong></td><td><strong>revisarse</strong> en el contexto de la promoción de la mejora continua</td></tr>
+            <tr><td><strong>g)</strong></td><td>realizarse a <strong>intervalos planificados</strong> y cuando haya cambios significativos en la organización o en el contexto en que opera</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>La organización debe <strong>actuar sobre los resultados</strong> de sus ejercicios y pruebas para implementar cambios y mejoras.</p>
+
+      <div class="caja caja-clave">
+        <span class="titulo-caja">Un programa, no un simulacro anual</span>
+        <p>La palabra clave está en el punto d): los ejercicios validan las estrategias y soluciones «tomados en conjunto, a lo largo del tiempo». No se pide probarlo todo de una vez, sino un programa que, sumado, lo cubra. La norma no fija frecuencia ni tipos de ejercicio; exige que estén planificados, que tengan objetivos y que dejen un informe con acciones. Recuerde que los procedimientos de advertencia y comunicación (8.4.3) tienen que formar parte del programa.</p>
+      </div>
+
+      <div class="caja caja-error">
+        <span class="titulo-caja">Error frecuente: el ejercicio que no puede fallar</span>
+        <p>Un ejercicio diseñado para salir bien —escenario conocido, participantes avisados, sistemas preparados la víspera— no valida nada. El valor está en lo que revela. Un informe posterior sin hallazgos ni acciones debería despertar más sospecha en un auditor que uno con diez.</p>
+      </div>
+
+      <h2 id="evaluacion">8.6 Evaluación de la documentación y las capacidades de continuidad del negocio</h2>
+      <p>La organización debe:</p>
+      <ul>
+        <li>evaluar la <strong>idoneidad, adecuación y eficacia</strong> de su análisis de impacto en el negocio, evaluación de riesgos, estrategias, soluciones, planes y procedimientos;</li>
+        <li>realizar las evaluaciones mediante <strong>revisiones, análisis, ejercicios, pruebas, informes posteriores a incidentes y evaluaciones del desempeño</strong>;</li>
+        <li>realizar evaluaciones de las capacidades de continuidad del negocio de los <strong>socios y proveedores pertinentes</strong>;</li>
+        <li>evaluar el <strong>cumplimiento</strong> de los requisitos legales y reglamentarios aplicables y de las mejores prácticas del sector, y la <strong>conformidad</strong> con su propia política y sus objetivos de continuidad del negocio;</li>
+        <li><strong>actualizar la documentación y los procedimientos</strong> de manera oportuna.</li>
+      </ul>
+      <p>Estas evaluaciones deben realizarse <strong>a intervalos planificados, después de un incidente o una activación, y cuando ocurran cambios significativos</strong>.</p>
+
+      <div class="caja caja-info">
+        <span class="titulo-caja">Tres disparadores</span>
+        <p>El calendario, un incidente y un cambio. El segundo se olvida con frecuencia: cada activación real de un plan —aunque haya salido bien— obliga a evaluar. El resultado de estas evaluaciones es una entrada obligatoria de la <a href="capitulo-9.html#revision">revisión por la dirección</a> (9.3.2 h).</p>
+      </div>
